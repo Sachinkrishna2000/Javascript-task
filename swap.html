@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap 2 no.s Js Program</title>
+</head>
+<body>
+    <script>
+        alert("Swap 2 no.s Js Program");
+        var a=10;
+        var b=20;
+        //Using third variable
+        document.write("Swap Using Third Variable");
+        document.write("<br>");
+        var temp;
+        document.write("No.s before swap are : a="+ a +" and b="+ b);
+        temp=a;
+        a=b;
+        b=temp;
+        document.write("<br>");
+        document.write("No.s after swap are : a="+ a +" and b="+ b);
+        //Without using third variable
+        document.write("<hr>");
+        document.write("Swap without Third Variable");
+        document.write("<br>");
+        document.write("No.s before swap are : a="+ a +" and b="+ b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        document.write("<br>");
+        document.write("No.s after swap are : a="+ a +" and b="+ b);
+        //Using one line or expression
+        document.write("<hr>");
+        document.write("Swap Using One Line or Expression");
+        document.write("<br>");
+        document.write("No.s before swap are : a="+ a +" and b="+ b);
+        [a,b]=[b,a]
+        document.write("<br>");
+        document.write("No.s after swap are : a="+ a +" and b="+ b);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse and Sum JS Program</title>
+</head>
+<body>
+    <script>
+        alert("Reverse and Sum of a number");
+        var num = 1234;
+        document.write("The number before reversing is:" + num);
+        var rem;
+        var sum=0;
+        var rev=0;
+        while(num > 0){
+            rem = num%10;
+            sum = sum+rem;
+            rev = rem+(rev*10);
+            num = Math.floor(num/10);
+        }
+        document.write("<br>");
+        document.write("The reversed number is:" + rev);
+        document.write("<br>")
+        document.write("The sum of the digits is:" + sum);
+
+    </script>
+</body>
+</html>
