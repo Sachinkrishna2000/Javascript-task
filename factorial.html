@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial JS Program</title>
+</head>
+<body>
+    <script>
+         alert("Find Factorial Of A Number");
+        var n = prompt("Enter the number", "Enter here");
+        n = parseInt(n);
+        
+        function factorial(n){
+            
+            var fact = 1;
+            for(var i=1;i<=n;i++){
+                fact=fact*i;
+            }
+            return fact;
+        }
+        var f = factorial(n);
+        document.write("The factorial of " + n + " is " + f );
+    </script>
+    
+</body>
+</html>

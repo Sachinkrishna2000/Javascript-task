@@ -9,7 +9,33 @@
 <body>
     <script>
         alert("Find Percentage and grade");
-        
+        var n1 = prompt("Enter the first subject marks", "Enter the marks here");
+        n1 = parseInt(n1);
+        var n2 = prompt("Enter the second subject marks", "Enter the marks here");
+        n2 = parseInt(n2);
+        var n3 = prompt("Enter the third subject marks", "Enter the marks here");
+        n3 = parseInt(n3);
+        var n4 = prompt("Enter the fourth subject marks", "Enter the marks here");
+        n4 = parseInt(n4);
+        var n5 = prompt("Enter the fifth subject marks", "Enter the marks here");
+        n5 = parseInt(n5);
+        document.write("The 5 subject marks are : <br>" + n1 + "<br>" + n2 + "<br>" + n3 + "<br>" + n4 + "<br>" + n5 + "<br>");
+        var per;
+        var grade;
+        per = ((n1+n2+n3+n4+n5)/500)*100;
+        document.write("The Percentage is :" + per +"<br>");
+        if(per>80){
+            document.write("The Grade is A");
+        }
+        else if(per<=80 && per>60){
+            document.write("The Grade is B");
+        }
+        else if(per<=60 && per>40){
+            document.write("The Grade is C");
+        }
+        else{
+            document.write("The Grade is FAIL");
+        }
 
     </script>
     
